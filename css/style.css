@@ -2,6 +2,23 @@
     width: 85px;
 }
 .nav-link{
-    color: #949499;
+    color: #000000 !important;
+}
+
+.nav-link:hover, .nav-link.show {
+    color: #f010b8ec !important; 
+}
+
+.dropdown-item{
+    color: #000000 !important;
+}
+
+.dropdown-item:hover, .dropdown-item.show {
+    color: #f010b8ec !important; 
+}
+
+.contenido{
+    position: absolute;
+    bottom: 0;
 }
 
