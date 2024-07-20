@@ -1,103 +1,110 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-           <meta charset="UTF-8">
-           <title> Venta de Casas Pagina Oficial </title>
-           <link rel="stylesheet" href="./css/style.css"> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/style.css"> 
            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-           
-      
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <title>Venta de Casas Pagina Oficial</title>
+</head>
 
-        <header>
+<body>
+  <header class="mt-4  header">
+    <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth w-85 mx-auto">
+      <a href="https://frahmdigital.com/" class="navbar-brand">
+      <img src="./imagenes/casa-fucsia.jpeg" alt="Logo de la empresa" class="logo-img">
+    </a>
+   <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+   </button>
+     <div class="collapse navbar-collapse  justify-content-end"  id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-         
-            <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth ">
-              <div class="container">
-                <img src="./imagenes/casa-fucsia.jpeg" alt="Logo de la empresa" class="logo-img">
-             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-             </button>
-               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#arrendamiento">Arrendamiento</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#compra">Compra</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#inversion">Inversión</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#finca">Finca Raiz</a>
+          </div>
+        </li>
 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#arrendamiento">Arrendamiento</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#compra">Compra</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#inversion">Inversion</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#finca">Finca Raiz</a>
-                    </div>
-                  </li>
+           <li class="nav-item">
+              <a href="#portafolio" class="nav-link">Portafolio</a>
+           </li>
+           <li class="nav-item">
+              <a href="#acerca" class="nav-link">Acerca  de</a>
+           </li>
+           <li class="nav-item">
+              <a href="#contacto" class="nav-link">Contacto</a>
+           </li>
+      </ul>
+    </div>
+    </div>                 
+  </nav>
+  </header>
+  <section class="banner position-relative">
+    <video loop controls muted class="ocultar-mobile">
+      <source src="./imagenes/Video de WhatsApp 2024-07-14 a las 12.06.50_4f5c2967.mp4" type="video/mp4">
+    </video>
 
-                     <li class="nav-item">
-                        <a href="#portafolio" class="nav-link">Portafolio</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#acerca" class="nav-link">Acerca  de</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#contacto" class="nav-link">Contacto</a>
-                     </li>
-                </ul>
-              </div>
-              </div>                 
-            </nav>
+    <img src="./imagenes/image-5.webp" alt="" class="mostrar-mobile">    
+    
+<div class="w-85 mx-auto">
+  <div class="contenido position-absolute">
+    <p class="text-secondary fw-normal minititulo "> CONOCE NUESTROS PROYECTOS </p>
+    <h1 class="text-secondary fw-semibold maxititulo">
+       Adquiere Tu Vivienda
+    </h1>
+    <p class="text-secondary  fw-ligth"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis tenetur blanditiis quas rem corrupti?
+       Soluta accusamus dolores unde at iste repellendus quas
+      molestias debitis aut error dolor, labore possimus quos.
+    </p>
+    <button type="button" class="btn btn-outline-warning">Comprar</button>
+   </div>
+  </div>
+    </section>
 
-          
-                <section class="container">
-                <video width="1300" height="550" loop muted controls>
-                    <source src="./imagenes/Video de WhatsApp 2024-07-14 a las 12.06.50_4f5c2967.mp4" type="video/mp4" class="video">                  
-                </video>
-              </div>   
-
-        <body>
-          <div class="container">
-            <div class="card-group">
-              <div class="card text-center mb-3" style="width: 18rem;">
-                <img src="./imagenes/frahm-logo-gradient.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-
-             <div class="card text-center mb-3" style="width: 18rem;">
-                <img src="./imagenes/frahm-logo-gradient.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-
-              <div class="card text-center mb-3" style="width: 18rem;">
-                <img src="./imagenes/frahm-logo-gradient.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              </div>
-            </div>
+    <div class="container">
+      <div class="card-group">
+        <div class="card text-center mb-3" style="">
+          <img src="./imagenes/frahm-logo-gradient.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
-      </header>        
 
+       <div class="card text-center mb-3" style="">
+          <img src="./imagenes/frahm-logo-gradient.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
 
-            
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        </body>
+        <div class="card text-center mb-3" style="">
+          <img src="./imagenes/frahm-logo-gradient.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        </div>
+      </div>
+  </div>
 
-
+</body>
 </html>

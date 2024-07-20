@@ -1,8 +1,13 @@
 .logo-img{
     width: 85px;
 }
+
 .nav-link{
-    color: #000000 !important;
+    color: #949494 !important;
+}
+
+.w-85 {
+    width: 85%;
 }
 
 .nav-link:hover, .nav-link.show {
@@ -10,15 +15,51 @@
 }
 
 .dropdown-item{
-    color: #000000 !important;
+    color: #949494 !important;
 }
 
 .dropdown-item:hover, .dropdown-item.show {
     color: #f010b8ec !important; 
 }
 
-.contenido{
-    position: absolute;
-    bottom: 0;
+video {
+    height: 580px;
+    width: 100%;
 }
+.contenido{
+    max-width: 300px;
+    bottom: 20%;
+}
+
+.minititulo{
+    font-size: 15px;
+    margin-bottom: 5%;
+}
+.maxititulo{
+    font-size: 44px;
+    margin-bottom: 5%;
+}
+.header{
+    width: 100%;
+    z-index: 1;
+}
+
+.mostrar-mobile{
+    display: none;
+}
+.ocultar-mobile{
+    display: block;
+}
+
+@media (max-width: 990px) {
+    .ocultar-mobile { display: none;
+    }
+    .mostrar-mobile { display: block;
+
+    }
+}
+
+
+
+
 
