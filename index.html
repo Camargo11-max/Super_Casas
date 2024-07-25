@@ -12,27 +12,28 @@
 
 <body>
   <header class="mt-4  header">
-    <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth w-85 mx-auto">
+    <nav class="navbar navbar-expand-lg w-85 mx-auto">
+      <div class="container-fluid ">
       <a href="https://frahmdigital.com/" class="navbar-brand">
       <img src="./imagenes/casa-fucsia.jpeg" alt="Logo de la empresa" class="logo-img">
     </a>
-   <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+   <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" 
+   aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
    </button>
      <div class="collapse navbar-collapse  justify-content-end"  id="navbarNav">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#arrendamiento">Arrendamiento</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#compra">Compra</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#inversion">Inversión</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#finca">Finca Raiz</a>
-          </div>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Servicios
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Arrendamiento</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Compra</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Finca Raiz</a></li>
+          </ul>
         </li>
 
            <li class="nav-item">
@@ -44,25 +45,25 @@
            <li class="nav-item">
               <a href="#contacto" class="nav-link">Contacto</a>
            </li>
-      </ul>
+          </ul>
     </div>
-    </div>                 
+    </div>               
   </nav>
   </header>
+
   <section class="banner position-relative">
     <video loop controls muted class="ocultar-mobile">
       <source src="./imagenes/Video de WhatsApp 2024-07-14 a las 12.06.50_4f5c2967.mp4" type="video/mp4">
     </video>
 
-    <img src="./imagenes/image-5.webp" alt="" class="mostrar-mobile">    
-    
+    <img src="./imagenes/image-5.webp" alt="" class="mostrar-mobile imagen-banner">      
 <div class="w-85 mx-auto">
   <div class="contenido position-absolute">
-    <p class="text-secondary fw-normal minititulo "> CONOCE NUESTROS PROYECTOS </p>
-    <h1 class="text-secondary fw-semibold maxititulo">
+    <p class="text-secondary fw-normal text-white-mobile"> CONOCE NUESTROS PROYECTOS </p>
+    <h1 class="text-secondary fw-semibold text-white-mobile">
        Adquiere Tu Vivienda
     </h1>
-    <p class="text-secondary  fw-ligth"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis tenetur blanditiis quas rem corrupti?
+    <p class="text-secondary  fw-ligth text-white-mobile"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis tenetur blanditiis quas rem corrupti?
        Soluta accusamus dolores unde at iste repellendus quas
       molestias debitis aut error dolor, labore possimus quos.
     </p>
@@ -71,38 +72,47 @@
   </div>
     </section>
 
-    <div class="container">
-      <div class="card-group">
-        <div class="card text-center mb-3" style="">
-          <img src="./imagenes/frahm-logo-gradient.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
 
-       <div class="card text-center mb-3" style="">
-          <img src="./imagenes/frahm-logo-gradient.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <section class="tarjetas-servicios">
+      <div class="container-fluid p-0 ">
+        <div class="row">
+          <div class="col p-0">
+            <div class="card text-white text-center">
+              <img src="./imagenes/OIP.jpeg" class="card-img" alt="...">
+              <div class="card-img-overlay fondo-1">
+                <h5 class="card-title text-black">Card title</h5>
+                <p class="card-text text-black">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button" class="btn btn-danger">Danger</button>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="card text-white text-center">
+              <img src="./imagenes/OIP (3).jpeg" class="card-img" alt="...">
+              <div class="card-img-overlay fondo-2">
+                <h5 class="card-title text-black">Card title</h5>
+                <p class="card-text text-black">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button" class="btn btn-dark">Dark</button>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="card text-white text-center">
+              <img src="./imagenes/casa-con-fachada.jpeg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-black">Card title</h5>
+                <p class="card-text text-black">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button" class="btn btn-primary">Primary</button>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="card text-center mb-3" style="">
-          <img src="./imagenes/frahm-logo-gradient.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        </div>
+
+    </section>
+
+   
       </div>
   </div>
 
