@@ -59,6 +59,7 @@ video {
 .card {
     border: none;
     border-radius: 0%;
+    position: relative;
 }
 
 .card-img { 
@@ -70,7 +71,9 @@ video {
 }
 
 .card-img-overlay {
-    align-content: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 @media (max-width: 990px) {
@@ -80,7 +83,7 @@ video {
     .mostrar-mobile { 
         display: block;
     }
-    .text-white-mobile {
+    .contenido .text-white-mobile {
        color: #ffffff !important;  
     }
 }
