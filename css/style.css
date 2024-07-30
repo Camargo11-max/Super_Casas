@@ -76,6 +76,20 @@ video {
     left: 50%;
 }
 
+.reconocimiento-dos{
+    background: #000;
+    border-radius: 50rem;
+}
+
+.img-five{
+    width: 50%;
+}
+
+.btn{
+    width: 75%;
+}
+
+
 @media (max-width: 990px) {
     .ocultar-mobile { 
         display: none;
@@ -85,7 +99,7 @@ video {
     }
     .contenido .text-white-mobile {
        color: #ffffff !important;  
-    }
+    }    
 }
 
 
