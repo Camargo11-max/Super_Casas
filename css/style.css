@@ -32,6 +32,11 @@ video {
     width: 100%;
 }
 
+.video-portafolio{
+    height: 450px; 
+    width: 100%;
+}
+
 .contenido {
     max-width: 300px;
     bottom: 20%;
