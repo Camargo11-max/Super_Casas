@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
-           <link rel="stylesheet" href="./css/style.css">
+           <link rel="stylesheet" href="./css/contacto.css">
            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>     
 </head>
 <body>
@@ -55,7 +55,7 @@
       </nav>
       </header> 
 
-      <section>
+      <section class="nosotros py-3 p-4">
         <div class="container-fluid">
           <div class="row align-items-start">
             <div class="col p-5">
@@ -64,99 +64,99 @@
                Chía, Cundinamarca, Colombia </p>
                <p> <span class="text-primary"> E-mail: </span>ventas@super-casas.com</p> 
                <p> <span class="text-primary"> Telefono: </span> 061-8646570</p>
-               <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3975.5027374386736!2d-74.0579201793141!3d4.855070369291507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8e3f878dd475a989%3A0x4211096980b5302!2sCh%C3%ADa%2C%20Cundinamarca%2C%20Colombia!3m2!1d4.8626039!2d-74.0559882!4m5!1s0x8e3f878dd475a989%3A0x4211096980b5302!2sCh%C3%ADa%2C%20Cundinamarca%2C%20Colombia!3m2!1d4.8626039!2d-74.0559882!5e0!3m2!1sen!2sus!4v1723060598122!5m2!1sen!2sus" width="350" height="250" class="border border-primary" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3975.5027374386736!2d-74.0579201793141!3d4.855070369291507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8e3f878dd475a989%3A0x4211096980b5302!2sCh%C3%ADa%2C%20Cundinamarca%2C%20Colombia!3m2!1d4.8626039!2d-74.0559882!4m5!1s0x8e3f878dd475a989%3A0x4211096980b5302!2sCh%C3%ADa%2C%20Cundinamarca%2C%20Colombia!3m2!1d4.8626039!2d-74.0559882!5e0!3m2!1sen!2sus!4v1723060598122!5m2!1sen!2sus" width="550" height="250" class="border border-primary" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+
             <div class="col container-fluid p-3 border border-5">
               <h2 class="text-center p-2">¡ REGISTRATE!</h2>
-              <form class="row g-3 needs-validation" novalidate>
-                <div class="col-md-6 position-relative">
-                  <label for="validationTooltip01" class="form-label">Nombres</label>
-                  <input type="text" class="form-control" id="validationTooltip01"  required>
-                  <div class="valid-tooltip">
-                    Looks good!
+              
+              <form action="" class="formulario" id="formulario">
+                
+                <div class="formulario__grupo" id="grupo__nombre">
+                  <label for="nombre" class="formulario__label">Nombres</label>
+                  <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Mark">
+                    <i class=" formulario__validacion-estado bi-exclamation-circle"></i>
                   </div>
+                  <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
                 </div>
-                <div class="col-md-6 position-relative">
-                  <label for="validationTooltip02" class="form-label">Apellidos</label>
-                  <input type="text" class="form-control" id="validationTooltip02"  required>
-                  <div class="valid-tooltip">
-                    Looks good!
+          
+                <div class="formulario__grupo" id="grupo__apellido">
+                  <label for="apellido" class="formulario__label">Apellidos</label>
+                  <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Otto">
+                    <i class=" formulario__validacion-estado bi-exclamation-circle"></i>
                   </div>
+                  <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
                 </div>
-                <div class="col-md-8 position-relative">
-                  <label for="validationTooltipUsername" class="form-label">E-mail</label>
-                  <div class="input-group has-validation">
-                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                    <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-                    <div class="invalid-tooltip">
-                      Looks good!
-                    </div>
+          
+                <div class="formulario__grupo" id="grupo__correo">
+                  <label for="correo" class="formulario__label">Correo Electrónico</label>
+                  <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Mark_Otto@gmail/hotmail.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
                   </div>
+                  <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
                 </div>
-                <div class="col-md-6 position-relative">
-                  <label for="validationTooltip04" class="form-label">Departamento</label>
-                  <select class="form-select" id="validationTooltip04" required>
-                    <option selected disabled value="">Eligir...</option>
-                 <option>Bogotá</option>
-                 <option>Medellín</option>
-                 <option>Cartagena</option>
-                 <option>Bucarramanga</option>
-                 <option>Barranquilla</option>
-                 <option>Cali</option>
-                 <option>Ibagué</option>
-                 <option>Santa Marta</option>
-                 <option>Villavicencio</option>
-                 <option>Cúcuta</option>
-                 <option>Pereira</option>
-                 <option>Valledupar</option>
-                 <option>Manizales</option>
-                 <option>Pasto</option>
-                 <option>Sincelejo</option>
-                 <option>Popayán</option>
-                 <option>Neiva</option>
-                 <option>Tunja</option>
-                 <option>Florencia</option>
-                 <option>Riohacha</option>
-                 <option>Yopal</option>
-                 <option>Armenia</option>
-                 <option>Leticia</option>
-                 <option>Quibdó</option>
-                 <option>Inírida</option>
-                 <option>Puerto Carreño</option>
-                 <option>San José Del Guaviare</option>
-                 <option>Mocoa</option>
-                 <option>Mitú</option>
-                 <option>Arauca</option>
-                 <option>Montería</option>
-                 <option>San Andrés</option>
-                  </select>
-                  <div class="invalid-tooltip">
-                    Looks good!
+          
+                
+                <div class="formulario__grupo" id="grupo__telefono">
+                  <label for="telefono" class="formulario__label">Teléfono</label>
+                  <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="(061) 3023948163">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
                   </div>
+                  <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
                 </div>
-                <div class="col-md-6 position-relative">
-                  <label for="validationTooltip04" class="form-label">Municipio</label>
-                  <select class="form-select" id="validationTooltip04" required>
-                    <option selected disabled value="">Eligir...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-tooltip">
-                    Looks good!
+
+                <div class="formulario__grupo" id="grupo__codigo">
+                  <label for="codigo" class="formulario__label">Codigo Postal</label>
+                  <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="codigo" id="codigo" placeholder="250207">
+                    <i class=" formulario__validacion-estado bi-exclamation-circle"></i>
                   </div>
+                  <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
                 </div>
-                <div class="form-check ps-5">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                  <label class="form-check-label" for="flexCheckIndeterminate">
-                    Acepto Terminos Y condiciones
+
+                <br>
+                <div class="formulario__grupo" id="grupo__ciudad">
+                  <label for="ciudad" class="formulario__label">Ciudad</label>
+                  <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="ciudad" id="ciudad" placeholder="Bogotá">
+                    <i class=" formulario__validacion-estado bi-exclamation-circle"></i>
+                  </div>
+                  <p class="formulario__input-error">La ciudad tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__municipio">
+                  <label for="municipio" class="formulario__label">Municipio</label>
+                  <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="municipio" id="municipio" placeholder="Alcalá">
+                    <i class=" formulario__validacion-estado bi-exclamation-circle"></i>
+                  </div>
+                  <p class="formulario__input-error">El municipio tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
+                </div>
+
+
+                <div class="formulario__grupo" id="grupo__terminos">
+                  <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los Terminos y Condiciones
                   </label>
                 </div>
-                <div class="col-12 text-center">
-                  <button class="btn btn-outline-primary rounded-pill" type="submit"> Enviar Formulario </button>
+          
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                  <p><i class="bi bi-exclamation-triangle"></i> <b>Error:</b> Por favor completa los campos correctamente. </p>
                 </div>
-            </div>
-          </div>
-        </div>
-      </form>
+          
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                  <button type="submit" class="btn btn-outline-success">Enviar</button>
+                  <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"> ¡ Formulario enviado exitosamente !</p>
+                </div>
+              </form>
+  </section>
+
+
         <section class="reconocimiento-tres py-2 p-0 text-center" id="">
           <div class="container container-objetivo">
             <div class="row align-items-center">
@@ -179,5 +179,8 @@
             <div class="col-3 py-3"><img src="./imagenes/cafam.jpeg" alt="" class="img-aliados"></div>
           </div>
       </footer>
+
+      <script src="js/formulario.js"></script>
+      
 </body>
 </html>
