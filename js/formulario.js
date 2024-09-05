@@ -9,8 +9,8 @@
         correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
         telefono: /^\d{1,14}$/, // 7 a 14 numeros.
         codigo: /^\d{6,8}$/, // 7 a 14 numeros.
-        ciudad: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
-        municipio: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+        ciudad: /^[a-zA-ZÀ-ÿ\s]{4,40}$/,
+        municipio: /^[a-zA-ZÀ-ÿ\s]{4,40}$/,
       }
 
       const campos ={
@@ -81,7 +81,7 @@
         input.addEventListener('blur', validarformulario);
       });
   
-       /* Validar los campos y reiniciar los campos, con la funcion tipo flecha, parametro e que es el evento */
+       /* Validar los campos y reiniciar los campos, con la funcion tipo flecha, parametro e que es el evento= (e)*/
       formulario.addEventListener('submit', (e) => {
         e.preventDefault ();
 
