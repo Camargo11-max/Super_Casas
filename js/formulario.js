@@ -97,7 +97,7 @@
           }, 5000);
 
           document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) =>{
-            icono.classList.removo('formulario__grupo-correctoo');
+            icono.classList.removo('formulario__grupo-correcto');
           });
 
         }else {
