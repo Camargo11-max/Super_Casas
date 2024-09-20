@@ -1,0 +1,79 @@
+.logo-img {
+    width: 130px;
+}
+
+.nav-link {
+    color: #000000!important;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.nav-link:hover, .nav-link.show  {
+    color: #bf5142 !important; 
+}
+
+.dropdown-item {
+    color: #000000 !important;
+}
+
+.dropdown-item:hover, .dropdown-item.show {
+    color: #bf5142 !important; 
+}
+
+.container-header{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.card-img { 
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.contenido-dos{
+    color: #bf5142 !important;
+    max-width: 500px;
+    bottom: 45%;
+}
+
+.card-portafolio{
+    height: 680px;
+    width: 100%;
+}
+
+.card-portafolio-dos{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.card-portafolio-tres{
+    background-color: #000000 !important;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.card-img-top{
+    border-radius: 0%;
+    height: 350px;
+    width: 100%;
+}
+
+.video-portafolio{
+    height: 450px; 
+    width: 100%;
+}
+
+.img-aliados{
+    width: 45%;
+}

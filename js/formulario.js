@@ -8,7 +8,7 @@
         apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
         correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
         telefono: /^\d{1,14}$/, // 7 a 14 numeros.
-        codigo: /^\d{6,8}$/, // 7 a 14 numeros.
+        codigo: /^\d{6,8}$/, // 6 a 8 numeros.
         ciudad: /^[a-zA-ZÀ-ÿ\s]{4,40}$/,
         municipio: /^[a-zA-ZÀ-ÿ\s]{4,40}$/,
       }

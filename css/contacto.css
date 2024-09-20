@@ -30,6 +30,26 @@
     width: 45%;
 }
 
+.container-header{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.container-nosotros{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  } 
+
+.container-objetivo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal; 
+  }
+
 
 * {
 	box-sizing: border-box;
@@ -119,6 +139,7 @@ main {
 	display: none;
 }
 
+
 .formulario__mensaje-activo {
 	display: block;
 }
@@ -141,6 +162,15 @@ main {
 
 .formulario__btn:hover {
 	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito{
+	height: 45px;
+	line-height: 45px;
+	background: #1ed12d;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
 }
 
 .formulario__mensaje-exito {
