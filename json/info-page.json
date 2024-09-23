@@ -1,0 +1,39 @@
+[
+    {
+      "name": "hamburger",
+      "price": 90000,
+      "image": "casa-azul.png",
+      "type": "vegetables"
+    },
+    {
+      "name": "hot dogs",
+      "price": 1.99,
+      "image": "hotdogs.jpg",
+      "type": "meat"
+    },
+    {
+      "name": "spam",
+      "price": 2.85,
+      "image": "spam.jpg",
+      "type": "meat"
+    },
+    {
+      "name": "refried beans",
+      "price": 0.99,
+      "image": "refried.jpg",
+      "type": "vegetables"
+    },
+    {
+      "name": "kidney beans",
+      "price": 0.58,
+      "image": "kidney.jpg",
+      "type": "vegetables"
+    },
+    {
+      "name": "garden peas",
+      "price": 0.52,
+      "image": "gardenpeas.jpg",
+      "type": "vegetables"
+    }
+ 
+]

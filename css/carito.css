@@ -1,0 +1,23 @@
+.logo-img {
+    width: 130px;
+}
+
+.nav-link {
+    color: #000000!important;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.nav-link:hover, .nav-link.show  {
+    color: #bf5142 !important; 
+}
+
+.dropdown-item {
+    color: #000000 !important;
+}
+
+.dropdown-item:hover, .dropdown-item.show {
+    color: #bf5142 !important; 
+}
