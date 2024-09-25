@@ -16,7 +16,7 @@
     <header class="mt-4 container-header">
         <nav class="navbar navbar-expand-lg w-85 mx-auto p-0">
           <div class="container-fluid ">
-          <a href="file:///C:/Users/crist/Desktop/Super_Casas/index.html" class="navbar-brand">
+          <a href="file:///C:/Users/crist/Desktop/Super_Casas/principal.html" class="navbar-brand">
           <img src="./imagenes/logo-vistana.jpg" alt="Logo de la empresa" class="logo-img">
         </a>
        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" 
@@ -28,14 +28,14 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
                aria-expanded="false">
-                Servicios
+                Principal
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="index.html #Arrendamiento">Arrendamiento</a></li>
+                <li><a class="dropdown-item" href="principal.html#Arrendamiento">Arrendamiento</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="index.html #Compra">Compra</a></li>
+                <li><a class="dropdown-item" href="principal.html#Compra">Compra</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="index.html #Finca">Finca Raiz</a></li>
+                <li><a class="dropdown-item" href="principal.html#Finca">Finca Raiz</a></li>
               </ul>
             </li>
                <li class="nav-item">
@@ -56,17 +56,93 @@
       </nav> 
       </header>
 
-      
-      <div>
-        
-        
-        <ul id="product-list" ></ul>
+      <section  class="pb-4 py-4 ">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <div  id="summary-shop"  class="card-body border border-danger">
+                <h5 class="card-title">Tienda</h5>
+                <button  class="btn btn-outline-danger">Ver listado del Carrito</button>
+                <span id="count-car">0 </span> productos
+              </div>
+            </div>
+          </div>
+      </section>
 
-
-
-
+      <section  id="produt">
+        <div class="container container-fluid">
+        <div class="row">
+          <div class="row">
+            <div class="col-sm-12 col-lg-4 col-md-4 py-3">
+              <div class="card" style="width: 18rem;">
+                <img src="./imagenes/repacion baños.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Baño</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button onclick="agregarProducto(1)" class="btn btn-primary">Agregar carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 col-md-4 py-3">
+              <div class="card" style="width: 18rem;">
+                <img src="./imagenes/reparacion de cocinas.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cocina</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button onclick="agregarProducto(2)" class="btn btn-primary">Agregar carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 col-md-4 py-3">
+              <div class="card" style="width: 18rem;">
+                <img src="./imagenes/reparacion habitacion.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Habitaciones</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button onclick="agregarProducto(3)" class="btn btn-primary">Agregar carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-sm-12 col-lg-4 col-md-4 py-3">
+            <div class="card" style="width: 18rem;">
+              <img src="./imagenes/fachada.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fachadas</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button onclick="agregarProducto(Fachada)" class="btn btn-primary">Agregar carrito</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4 col-md-4 py-3">
+            <div class="card" style="width: 18rem;">
+              <img src="./imagenes/sala-comedor.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sala-Comedor</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button onclick="agregarProducto(Sala)" class="btn btn-primary">Agregar carrito</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4 col-md-4 py-3">
+            <div class="card" style="width: 18rem;">
+              <img src="./imagenes/patio.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Zona de Lavado</h5>
+                <p>$20.000</p>
+                <button onclick="agregarProducto(Lavado)" class="btn btn-primary">Agregar carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      
+   </section>
+
+
+
+       
       <!--<div class="container-center"></div>
         <h1>Tienda</h1>
         <div id="summary-shop"></div>
