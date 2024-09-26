@@ -62,9 +62,10 @@
           <div class="col">
             <div class="card" style="width: 24rem;">
               <div  id="summary-shop"  class="card-body border border-danger">
-                <h5 class="card-title">Tienda</h5>
-                <button  class="btn btn-outline-danger">Ver listado del Carrito</button>
-                <span id="count-car">0 </span> productos
+                <h4 class="card-title">Tienda</h4>
+                <button onclick="toggleListado()" class="btn btn-outline-danger">Ver listado del Carrito</button>
+               <span id="count-car">0 </span> productos
+                <div id="listadoCart"></div>
               </div>
             </div>
           </div>
@@ -75,64 +76,70 @@
         <div class="row">
           <div class="row">
             <div class="col-sm-12 col-lg-4 col-md-4 py-3">
-              <div class="card" style="width: 18rem;">
-                <img src="./imagenes/repacion baños.jpeg" class="card-img-top" alt="...">
+              <div class="card border-danger-subtle border-2" style="width: 18rem;">
+                <img src="./imagenes/repacion baños.jpeg" class="card-img-top " alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Baño</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button onclick="agregarProducto(1)" class="btn btn-primary">Agregar carrito</button>
+                  <h3 class="card-title">Baño</h3>
+                  <h4>1-4<span class="text-danger"> Semanas</span></h4>
+                  <p> <i class="bi bi-cash-coin"></i> Desde: 11'700.296 millones</p>
+                  <button onclick="agregarProducto('Baño')" class=" btn btn-outline-danger">Agregar carrito</button>
                 </div>
               </div>
             </div>
             <div class="col-sm-12 col-lg-4 col-md-4 py-3">
-              <div class="card" style="width: 18rem;">
+              <div class="card border border-warning" style="width: 18rem;">
                 <img src="./imagenes/reparacion de cocinas.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Cocina</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button onclick="agregarProducto(2)" class="btn btn-primary">Agregar carrito</button>
+                  <h3 class="card-title">Cocina</h3>
+                  <h4>4-8<span class="text-warning"> Semanas</span></h4>
+                  <p> <i class="bi bi-cash-coin"></i> Desde: 16'380.4150 millones</p>
+                  <button onclick="agregarProducto('Cocina')" class="btn btn-outline-warning">Agregar carrito</button>
                 </div>
               </div>
             </div>
             <div class="col-sm-12 col-lg-4 col-md-4 py-3">
-              <div class="card" style="width: 18rem;">
+              <div class="card border border-warning-subtle" style="width: 18rem;">
                 <img src="./imagenes/reparacion habitacion.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Habitaciones</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button onclick="agregarProducto(3)" class="btn btn-primary">Agregar carrito</button>
+                  <h3 class="card-title">Habitaciones</h3>
+                  <h4>2-4<span class="text-warning"> Semanas</span></h4>
+                  <p> <i class="bi bi-cash-coin"></i> Desde: 21'060.533 millones</p>
+                  <button onclick="agregarProducto('Habitacion')" class="btn btn-outline-warning">Agregar carrito</button>
                 </div>
               </div>
             </div>
           </div>
         <div class="row">
           <div class="col-sm-12 col-lg-4 col-md-4 py-3">
-            <div class="card" style="width: 18rem;">
+            <div class="card border border-success" style="width: 18rem;">
               <img src="./imagenes/fachada.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Fachadas</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button onclick="agregarProducto(Fachada)" class="btn btn-primary">Agregar carrito</button>
+                <h3 class="card-title">Fachadas</h3>
+                <h4>2-4<span class="text-success"> Semanas</span></h4>
+                <p> <i class="bi bi-cash-coin"></i> Desde: 17'316.438 millones</p>
+                <button onclick="agregarProducto('Fachada')" class="btn btn-outline-success">Agregar carrito</button>
               </div>
             </div>
           </div>
           <div class="col-sm-12 col-lg-4 col-md-4 py-3">
-            <div class="card" style="width: 18rem;">
+            <div class="card border border-success-subtle" style="width: 18rem;">
               <img src="./imagenes/sala-comedor.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Sala-Comedor</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button onclick="agregarProducto(Sala)" class="btn btn-primary">Agregar carrito</button>
+                <h3 class="card-title">Sala-Comedor</h3>
+                <h4>3-6<span class="text-success"> Semanas</span></h4>
+                <p> <i class="bi bi-cash-coin"></i> Desde: 14'040.355 millones</p>
+                <button onclick="agregarProducto('Sala')" class="btn btn-outline-success">Agregar carrito</button>
               </div>
             </div>
           </div>
           <div class="col-sm-12 col-lg-4 col-md-4 py-3">
-            <div class="card" style="width: 18rem;">
+            <div class="card border border-primary" style="width: 18rem;">
               <img src="./imagenes/patio.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Zona de Lavado</h5>
-                <p>$20.000</p>
-                <button onclick="agregarProducto(Lavado)" class="btn btn-primary">Agregar carrito</button>
+                <h3 class="card-title">Zona de Lavado</h3>
+                <h4>2-5<span class="text-primary"> Semanas</span></h4>
+                <p> <i class="bi bi-cash-coin"></i> Desde: 9'360.237 millones</p>
+                <button onclick="agregarProducto('Zona de Lavado')" class="btn btn-outline-primary">Agregar carrito</button>
               </div>
             </div>
           </div>
