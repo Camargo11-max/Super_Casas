@@ -18,7 +18,7 @@ function agregarProducto(producto){
         carrito.push({id:producto, cantidad:1})
     }
 
-   localStorage.setItem('listaCarrito', JSON.stringify(carrito));
+   localStorage.setItem('listaCarrito',JSON.stringify(carrito));
    actualizarContadorProductos();
    alert ('Vas a renovar tu ' +  producto)
 }
@@ -53,7 +53,7 @@ const ul = document.createElement('ul');
 
 carrito.forEach(producto => {
    const li = document.createElement ('li');
-   li.textContent = producto.id + producto.cantidad;
+   li.textContent = producto.cantidad + producto.id;
    console.log(producto)
    ul.appendChild(li) 
 });
@@ -67,43 +67,3 @@ window.addEventListener('beforeunload', () => {
 
 actualizarContadorProductos ();
 
-
-
-
-
-
-
-
-
-
-/*const productlist = document.getElementById('product-list');
-
-const fetchPromise = fetch(
-    "./json/info-page.json",
-    );
-
-fetchPromise
-.then((response) => {
-    if (!response.ok) {
-        throw new Error (`HTTP error: ${response.status}`);
-    }
-    return response.json();
-})
-
-.then((data) => {
-console.log(data);
-data.forEach((product) => {
-    const listItem = document.createElement("li");
-    listItem.textContent = `Nombre ${product.name}, Precio ${product.price}, imagen ${product.image}, tipo ${product.type}`;
-    productlist.appendChild(listItem);  
-
-});
-})
-
-.catch((error) => {
-console.error (`Error al obtener los productos: ${error}`);
-
-const errorMesage = document.createElement('p');
-errorMesage.textContent = 'No se pudo obtener la informacion de los productos.';
-productlist.appendChild(errorMesage);
-}); */
